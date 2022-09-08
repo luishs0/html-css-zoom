@@ -25,8 +25,42 @@ html {
     position: relative;
 }
 
+.speaker-view {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: .8rem;
+    z-index: 2;
+}
+
+.fa-table-list, .fa-maximize {
+    font-size: .8rem;
+}
+
+.text, .icon {
+    margin-right: 5px;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 10px;
+    padding: .5em .5em 0 .5em;
+    
+}
+
+.text {
+    padding: .4em .2em 0 .2em
+}
+
+.speaker-view .text {
+    display: inline-block;
+}
+
+.speaker-view .icon {
+    display: inline-block;
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
 .container-people {
-    height: 90%;
+    height: 80%;
     width: 90%;
     background-color: black;
     position: absolute;
@@ -36,7 +70,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .people {
@@ -49,6 +83,22 @@ html {
     background-position: center;
     background-color: #222222;
     border: 1px solid black;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: .8rem;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 0.2em;
+}
+
+.people, .name > .fa-microphone {
+    font-size: .8rem;
+    margin: 0;
 }
 
 /* /SCREEN */
